@@ -6,6 +6,9 @@ class Pile:
     def __init__(self):
         self.L = []
 
+    def __repr__(self):
+        return str(self.L)
+
     def vide(self):
         return self.L == []
 
