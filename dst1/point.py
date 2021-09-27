@@ -1,5 +1,3 @@
-from random import randint
-
 class Point:
 
     nbr = 0
@@ -30,7 +28,7 @@ class Segment:
         return "[{};{}]".format(self.point1.nom, self.point2.nom)
 
     def longeur(self):
-        return squar((point1.x-point2.x)^2+ (point1.y-point2.y)^2)
+        return ((point1.x-point2.x)^2+ (point1.y-point2.y)^2)^0.5
 
 class Cercle:
 
@@ -43,4 +41,4 @@ class Cercle:
         
     def contient(self, point):
         segment = Segment(self.centre, point)
-        return segment.longueur == self.rayon
+        return segment.longueur() == self.rayon

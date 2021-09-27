@@ -1,3 +1,5 @@
+from random import randint
+
 class Dominos:
 
     def __init__(self, pointA, pointB):
@@ -13,7 +15,7 @@ class Dominos:
 
 def cree_pioche(n: int):
     return [Dominos(randint(1, 6), randint(1, 6)) for i in range(n)]
-
+T
 
 def domino_max(lst: list):
     max = lst[0]
@@ -21,3 +23,8 @@ def domino_max(lst: list):
         if i.valeur() > max.valeur():
             max = i
     return max
+
+l= cree_pioche(7)
+for i in l:
+    print(i.affiche_points())
+
