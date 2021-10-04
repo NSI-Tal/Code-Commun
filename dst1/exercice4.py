@@ -12,7 +12,7 @@ def nbr_de_chiffres(n):
     if mot == "":
         return 0
         
-    return 1+ longueur(mot[1:])
+    return 1+ nbr_de_chiffres(mot[1:])
 
 nb1 = 0
 def nbr_de_bit(n):
@@ -31,3 +31,6 @@ def nbr_de_bit(n):
     binaire(n)
 
     return nb1
+
+liste = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(liste[1])
